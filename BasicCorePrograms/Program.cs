@@ -8,7 +8,7 @@ namespace BasicCoreProgram
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear\n2.FlipCoin");
+                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -19,6 +19,10 @@ namespace BasicCoreProgram
                     case 2:
                         Flipcoin flip = new Flipcoin();
                         flip.CheckHeadAndTail();
+                        break;
+                    case 3:
+                        LargestOfThreeNumbers LargeNUmbers = new LargestOfThreeNumbers();
+                        LargeNUmbers.FindLargestNum();
                         break;
 
                     default:
