@@ -1,4 +1,5 @@
 ﻿using BasicCorePrograms;
+using CorePrograms;
 
 namespace BasicCoreProgram
 {
@@ -8,7 +9,7 @@ namespace BasicCoreProgram
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber\n7.VowelsOrConsonant");
+                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber\n7.VowelsOrConsonant\n8.power2\n9.factors");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -48,6 +49,11 @@ namespace BasicCoreProgram
                         powerof2 pow = new powerof2();
                         pow.power();
                         break;
+                    case 9:
+                        Factors fact = new Factors();
+                        fact.findFactors();
+                            break;
+                        
                     default:
                         Console.WriteLine("enter the valid choice");
                         break;
