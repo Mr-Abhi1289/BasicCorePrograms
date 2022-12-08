@@ -8,7 +8,7 @@ namespace BasicCoreProgram
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder");
+                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -36,6 +36,11 @@ namespace BasicCoreProgram
                         QuotientAndRemainder res = new QuotientAndRemainder();
                         res.Remainder();
                         break;
+                    case 6:
+                        SwapNumbers swap = new SwapNumbers();
+                        swap.swap();
+                        break;
+                    
 
                     default:
                         Console.WriteLine("enter the valid choice");
