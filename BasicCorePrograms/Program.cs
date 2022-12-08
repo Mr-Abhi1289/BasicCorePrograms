@@ -1,4 +1,6 @@
-﻿namespace BasicCoreProgram
+﻿using BasicCorePrograms;
+
+namespace BasicCoreProgram
 {
     internal class Program
     {
@@ -6,13 +8,17 @@
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear");
+                Console.WriteLine("1.leapyear\n2.FlipCoin");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         LeapYear year = new LeapYear();
                         year.findleap();
+                        break;
+                    case 2:
+                        Flipcoin flip = new Flipcoin();
+                        flip.CheckHeadAndTail();
                         break;
 
                     default:
