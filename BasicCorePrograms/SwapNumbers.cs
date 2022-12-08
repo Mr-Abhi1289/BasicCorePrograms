@@ -25,9 +25,6 @@ namespace BasicCoreProgram
             Console.WriteLine(num1);
             Console.WriteLine(num2);
 
-
-
-
         }
     }
 }

@@ -8,7 +8,7 @@ namespace BasicCoreProgram
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber");
+                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber\n7.VowelsOrConsonant");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -40,7 +40,12 @@ namespace BasicCoreProgram
                         SwapNumbers swap = new SwapNumbers();
                         swap.swap();
                         break;
-                    
+                    case 7:
+                        VowelOrConsenant vowel = new VowelOrConsenant();
+                        vowel.vowel();
+                        break;
+
+
 
                     default:
                         Console.WriteLine("enter the valid choice");
