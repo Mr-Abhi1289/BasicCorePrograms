@@ -44,9 +44,10 @@ namespace BasicCoreProgram
                         VowelOrConsenant vowel = new VowelOrConsenant();
                         vowel.vowel();
                         break;
-
-
-
+                    case 8:
+                        powerof2 pow = new powerof2();
+                        pow.power();
+                        break;
                     default:
                         Console.WriteLine("enter the valid choice");
                         break;
