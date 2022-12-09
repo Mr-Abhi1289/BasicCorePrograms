@@ -1,4 +1,5 @@
-﻿using BasicCorePrograms;
+﻿using BasicCoreProblems;
+using BasicCorePrograms;
 using CorePrograms;
 
 namespace BasicCoreProgram
@@ -9,7 +10,7 @@ namespace BasicCoreProgram
         {
             while (true)
             {
-                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber\n7.VowelsOrConsonant\n8.power2\n9.factors");
+                Console.WriteLine("1.leapyear\n2.FlipCoin\n3.LargestOfThreeNumber\n4.EvenOrOdd\n5.QuotientAndRemainder\n6.SwapNumber\n7.VowelsOrConsonant\n8.power2\n9.factors\n10.HarmonicNumbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -53,6 +54,10 @@ namespace BasicCoreProgram
                         Factors fact = new Factors();
                         fact.findFactors();
                             break;
+                    case 10:
+                        HarmonicNumber harmo = new HarmonicNumber();
+                        harmo.Harmonic();
+                        break;
                         
                     default:
                         Console.WriteLine("enter the valid choice");
